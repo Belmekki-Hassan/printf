@@ -1,10 +1,10 @@
 #include "main.h"
-
 /**
- * Find_Format - matching format specifier 
- * @i:. pour le balayage 
- * @args: arguments to print
- * Return: number of characters printed.
+ *Find_Format - matching format specifier 
+ *@i: pour le balayage
+ *@copyP_Format: format 
+ *@args: arguments to print
+ *Return: number of characters printed
 */
 int *Find_Format(int i, char *copyP_Format, va_list args)
 {
