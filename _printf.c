@@ -20,6 +20,8 @@ if (*format == '%')
 format++;
 if (*format == 'c')
 print_char(args, &count);
+else if (*format == 'b')
+print_binary(va_arg(args, unsigned int), &count); 
 else if (*format == 's')
 print_string(args, &count);
 else if (*format == 'd' || *format == 'i')
