@@ -7,6 +7,6 @@
  */
 void print_percent(int *count)
 {
-    _putchar('%');
-    (*count)++;
+	_putchar('%');
+	(*count)++;
 }
