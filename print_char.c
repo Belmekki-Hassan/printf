@@ -11,4 +11,3 @@ void print_char(va_list args, int *count)
     char c = va_arg(args, int);
     *count += _putchar(c);
 }
-
