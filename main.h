@@ -6,6 +6,7 @@
 
 int _putchar(char *c);
 int _printf(const char *format, ...);
+int _printfvtwo(const char *format, ...);
 struct printf_format
 {
 	char *op;
