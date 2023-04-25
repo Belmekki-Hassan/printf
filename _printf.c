@@ -1,7 +1,4 @@
 #include "main.h"
-#include "print_percent.c"
-#include "print_char.c"
-#include "print_string.c"
 
 /**
 *_printf - A printf clone
