@@ -13,8 +13,11 @@ va_list args;
 
 va_start(args, format);
 
-if (!format || !format[0])
-return (-1);
+if (!format || (format[0] == '%' && !format[1]))
+        return (-1);
+
+    if (format[0] == '%' && format[1] == ' ' && !format[2])
+        return (-1);
 
 while (*format)
 {
