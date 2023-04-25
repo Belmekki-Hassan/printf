@@ -4,31 +4,24 @@
  * @num: integer to print
  * Return: number of characters printed
  */
-int print_integer(int num)
+void print_integer(va_list args, int *count)
 {
-int count = 0;
-int neg = 0;
-if (num < 0)
-{
-neg = 1;
-num = -num;
-}
-if (num == 0)
-{
-_putchar('0');
-count++;
-}
-while (num > 0)
-{
-int digit = num % 10;
-_putchar(digit + '0');
-count++;
-num = num / 10;
-}
-if (neg)
+int num = va_arg(args, int);
+int digit = 0, divisor = 1;
+
+if(num < 0)
 {
 _putchar('-');
-count++;
+num = -num;
+*count += 1;
 }
-return (count);
+while (num / divisor > 0)
+divisor *= 10;
+while (divisor != 0)
+{
+_putchar(num / divisor + '0');
+num %= divisor;
+divisor /= 10;
+*count += 1;
+}
 }

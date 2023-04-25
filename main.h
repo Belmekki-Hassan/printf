@@ -10,6 +10,6 @@ void print_string(va_list args, int *count);
 void print_char(va_list args, int *count);
 int _putchar(char c);
 int _printf(const char *format, ...);
-int _print_integer(int num);
+void print_integer(va_list args, int *count);
 int string(char *str);
 #endif
