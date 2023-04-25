@@ -15,6 +15,11 @@ _putchar('-');
 num = -num;
 *count += 1;
 }
+if (num == 0)
+{
+_putchar('0');
+*count++;
+}
 while (num / divisor > 0)
 divisor *= 10;
 while (divisor != 0)
