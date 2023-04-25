@@ -7,10 +7,5 @@
 int _putchar(char *c);
 int _printf(const char *format, ...);
 int _printfvtwo(const char *format, ...);
-struct printf_format
-{
-	char *op;
-	int (*type)(va_list var);
-} ;
-typedef struct printf_format pf ; 
+int string(char *str);
 #endif
