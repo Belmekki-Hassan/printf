@@ -30,9 +30,9 @@ _putchar(num + '0');
 *count += 1;
 break;
 }
-_putchar(num / divisor + '0');
 num %= divisor;
 divisor /= 10;
+_putchar(num / divisor + '0');
 *count += 1;
 }
 }
