@@ -18,7 +18,7 @@ num = -num;
 if (num == 0)
 {
 _putchar('0');
-*count++;
+*count += 1;
 }
 while (num / divisor > 0)
 divisor *= 10;
@@ -30,9 +30,9 @@ _putchar(num + '0');
 *count += 1;
 break;
 }
-num %= divisor;
-divisor += 10;
 _putchar(num / divisor + '0');
+num %= divisor;
+divisor /= 10;
 *count += 1;
 }
 }
