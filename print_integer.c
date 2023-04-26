@@ -22,10 +22,16 @@ _putchar('0');
 }
 while (num / divisor > 0)
 divisor *= 10;
-while (divisor != 0)
+while (divisor > 0)
 {
+if (divisor == 1 && num < 10)
+{
+_putchar(num + '0');
+*count += 1;
+break;
+}
 num %= divisor;
-divisor /= 10;
+divisor += 10;
 _putchar(num / divisor + '0');
 *count += 1;
 }
