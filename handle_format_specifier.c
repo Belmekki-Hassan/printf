@@ -23,7 +23,8 @@ case 'i':
 print_integer(args, count);
 break;
 case 'b':
-print_binary(args, count);
+/*print_binary(args, count);*/
+break;
 case '%':
 print_percent(count);
 break;
