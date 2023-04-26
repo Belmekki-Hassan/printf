@@ -11,6 +11,7 @@ void print_char(va_list args, int *count);
 int _putchar(char c);
 int _printf(const char *format, ...);
 void print_integer(va_list args, int *count);
+void handle_format_specifier(va_list args, int *count, const char *format);
 int string(char *str);
 #endif
 

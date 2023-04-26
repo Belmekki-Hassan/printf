@@ -18,23 +18,9 @@ while (*format)
 if (*format == '%')
 {
 format++;
-if (*format == 'c')
-print_char(args, &count);
-else if (*format == 's')
-print_string(args, &count);
-else if (*format == 'd' || *format == 'i')
-print_integer(args, &count);
-else if (*format == '%')
-print_percent(&count);
-else
-{
-print_percent(&count);
 if (*format)
 {
-_putchar(*format);
-count++;
-}
-}
+handle_format_specifier(args, &count, format);
 format++;
 }
 else
@@ -46,4 +32,5 @@ count++;
 }
 va_end(args);
 return (count);
+}
 }
