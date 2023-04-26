@@ -22,6 +22,8 @@ case 'd':
 case 'i':
 print_integer(args, count);
 break;
+case 'b':
+print_binary(args, count);
 case '%':
 print_percent(count);
 break;
