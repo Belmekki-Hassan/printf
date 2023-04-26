@@ -23,6 +23,7 @@ if (*format)
 handle_format_specifier(args, &count, format);
 format++;
 }
+}
 else
 {
 _putchar(*format);
@@ -32,5 +33,4 @@ count++;
 }
 va_end(args);
 return (count);
-}
 }
