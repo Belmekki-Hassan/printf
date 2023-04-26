@@ -1,15 +1,14 @@
 #include "main.h"
 /**
- * print_integer - function to print an integer to stdout
+ * print_integer2 - function to print an integer to stdout
  * @args: list of arguments
  * @count: integer counter
  * Return: null
  */
-void print_integer(va_list args, int *count)
+void print_integer2(va_list args, int *count)
 {
 int num = va_arg(args, int);
 int divisor = 1;
-int skip_zero = 1;
 if (num < 0)
 {
 _putchar('-');
@@ -24,15 +23,17 @@ return;
 }
 while (num / divisor > 0)
 divisor *= 10;
-while (divisor != 0)
+while (divisor > 0)
 {
-int digit = num / divisor;
+if (divisor == 1 && num < 10)
+{
+_putchar(num + '0');
+*count += 1;
+break;
+}
 num %= divisor;
 divisor /= 10;
-if (digit == 0 && skip_zero)
-continue;
-skip_zero = 0;
-_putchar(digit + '0');
+_putchar(num / divisor + '0');
 *count += 1;
 }
 }
