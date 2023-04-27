@@ -1,0 +1,12 @@
+ case 'u':
+ 28 print_unsigned(args, count);
+ 29 break;
+ 30 case 'o':
+ 31 print_octal(args, count);
+ 32 break;
+ 33 case 'x':
+ 34 print_hex_lower(args, count);
+ 35 break;
+ 36 case 'X':
+ 37 print_hex_upper(args, count);
+
