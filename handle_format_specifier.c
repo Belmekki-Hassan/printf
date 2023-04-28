@@ -24,23 +24,10 @@ break;
 case 'b':
 print_binary(va_ag(args, unsined int), &count);
 break;
-case 'u':
-print_unsigned(args, count);
 break;
-case 'o':
-print_octal(args, count);
-break;
-case 'x':
-print_hex_lower(args, count);
-break;
-case 'X':
-print_hex_upper(args, count);
-break;
-/* handle other conversion specifiers here */
 case '%':
 print_percent(count);
 break;
-/* add more cases for other format specifiers here */
 case 'S':
 print_S(args, count);
 break;
