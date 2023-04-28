@@ -22,7 +22,7 @@ case 'i':
 print_integer(args, count);
 break;
 case 'b':
-print_binary(va_ag(args, unsined int), &count);
+print_binary(va_arg(args, int), count);
 break;
 break;
 case '%':
